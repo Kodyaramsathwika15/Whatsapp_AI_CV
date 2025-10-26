@@ -1,20 +1,28 @@
-# WhatsApp to Google Sheets Bot (pyngrok version)
+🔹 Project Overview
 
-## Setup
+A simple system to automatically log WhatsApp messages into Google Sheets.
+It extracts Name, Email, Phone, and message content from WhatsApp messages or resumes.
 
-1. Place your Google credentials JSON file as `credentials.json` in this folder.
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run Flask app:
-   ```
-   python app.py
-   ```
-4. Copy the **Public URL** printed in the console (from pyngrok).
-5. Go to Twilio Sandbox → When a message comes in → paste:
-   ```
-   <Public URL>/webhook
-   ```
-6. Join the Twilio sandbox with your WhatsApp number.
-7. Send a message → it will be logged in Google Sheets and you will get a reply.
+✨ Features
+
+📱 Receive WhatsApp messages via Twilio Sandbox
+
+📝 Extract sender details and message content
+
+📊 Store data in Google Sheets (Name | Email | Phone | Message)
+
+💬 Send automatic acknowledgment replies
+
+🌐 Can run locally or online (Replit / Railway)
+
+🛠 Tools & Technologies
+
+Python 🐍
+
+Flask – Webhook endpoint
+
+Twilio API – WhatsApp integration
+
+Google Sheets API (gspread + oauth2client) – Data storage
+
+curl / Requests – Testing POST requests
